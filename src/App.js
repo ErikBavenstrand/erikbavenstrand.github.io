@@ -1,53 +1,35 @@
-import React, { Component } from "react";
-import Navbar from "./components/navbar/Navbar";
-import Me from "./sections/me/Me";
-import Experience from "./sections/experience/Experience";
-import Projects from "./sections/projects/Projects";
-import Skills from "./sections/skills/Skills";
-import Contact from "./sections/contact/Contact";
+import React, { useState, useRef } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { useOnClickOutside } from './hooks';
+import { GlobalStyles } from './global';
+import { theme } from './theme';
+import { Burger, Menu } from './components';
+import { Me, Experience, Projects, Skills, Contact } from './sections';
+import FocusLock from 'react-focus-lock';
 
-import GlobalStyle from "./styles/Global";
+function App() {
+  const [open, setOpen] = useState(false);
+  const node = useRef();
+  const menuId = "main-menu";
 
-class App extends Component {
-  state = {
-    navbarOpen: false
-  }
+  useOnClickOutside(node, () => setOpen(false));
 
-  handleNavbar = () => {
-    this.setState({ navbarOpen: !this.state.navbarOpen });
-  }
-
-  render() {
-    return (
-      <>
-        <Navbar 
-          navbarState={this.state.navbarOpen}
-          handleNavbar={this.handleNavbar}
-        />
-        <Me
-          dark={false}
-          id="me"
-        />
-        <Experience
-          dark={true}
-          id="experience"
-        />
-        <Projects
-          dark={true}
-          id="projects"
-        />
-        <Skills
-          dark={false}
-          id="skills"
-        />
-        <Contact
-          dark={false}
-          id="contact"
-        />
-        <GlobalStyle />
-      </>
-    );
-  }
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <div ref={node}>
+        <FocusLock disabled={!open}>
+          <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+          <Menu open={open} setOpen={setOpen} id={menuId} />
+        </FocusLock>
+      </div>
+      <Me/>
+      <Experience/>
+      <Projects/>
+      <Skills/>
+      <Contact/>
+    </ThemeProvider>
+  );
 }
 
 export default App;

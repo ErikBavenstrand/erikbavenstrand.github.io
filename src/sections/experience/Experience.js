@@ -1,12 +1,12 @@
-import React from "react";
-import "./Experience.css"
+import React from 'react';
+import { StyledExperience } from './Experience.styled';
 
-export default function Experience({dark, id}) {
+const Experience = () => {
   return (
-    <div className={"section" + (dark ? " section-dark" : "")} class="experience">
-      <div className="section-content" id={id}>
-        <h1>Experience</h1>
-      </div>
-    </div>
-  );
+    <StyledExperience id="experience">
+      <h1>Experience</h1>
+    </StyledExperience>
+  )
 }
+
+export default Experience;

@@ -1,12 +1,12 @@
-import React from "react";
-import "./Contact.css"
+import React from 'react';
+import { StyledContact } from './Contact.styled';
 
-export default function Contact({dark, id}) {
+const Contact = () => {
   return (
-    <div className={"section" + (dark ? " section-dark" : "")} class="contact">
-      <div className="section-content" id={id}>
-        <h1>Contact</h1>
-      </div>
-    </div>
-  );
+    <StyledContact id="contact">
+      <h1>Contact</h1>
+    </StyledContact>
+  )
 }
+
+export default Contact;

@@ -1,12 +1,12 @@
-import React from "react";
-import "./Projects.css"
+import React from 'react';
+import { StyledProjects } from './Projects.styled';
 
-export default function Projects({dark, id}) {
+const Projects = () => {
   return (
-    <div className={"section" + (dark ? " section-dark" : "")} class="projects">
-      <div className="section-content" id={id}>
-        <h1>Projects</h1>
-      </div>
-    </div>
-  );
+    <StyledProjects id="projects">
+      <h1>Projects</h1>
+    </StyledProjects>
+  )
 }
+
+export default Projects;

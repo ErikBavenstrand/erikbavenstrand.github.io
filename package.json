@@ -2,7 +2,7 @@
   "name": "erikbavenstrand.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://erikbavenstrand.github.io",
+  "homepage": "http://bavenstrand.se",
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

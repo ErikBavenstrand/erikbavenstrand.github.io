@@ -4,7 +4,7 @@ import { useOnClickOutside } from './hooks';
 import { GlobalStyles } from './global';
 import { theme } from './theme';
 import { Burger, Menu } from './components';
-import { Me, Experience, Projects, Skills, Contact } from './sections';
+import { Landing, Experience, Projects, Skills, Contact } from './sections';
 import FocusLock from 'react-focus-lock';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Menu open={open} setOpen={setOpen} id={menuId} />
         </FocusLock>
       </div>
-      <Me/>
+      <Landing/>
       <Experience/>
       <Projects/>
       <Skills/>

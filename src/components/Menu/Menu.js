@@ -1,12 +1,11 @@
 import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Menu = ({ open, setOpen, ...props }) => {
   
   const isHidden = open ? true : false;
-  const tabIndex = isHidden ? 0 : -1;
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
@@ -14,7 +13,7 @@ const Menu = ({ open, setOpen, ...props }) => {
         to="me"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={0}
         duration= {500}
         onClick={() => setOpen(!open)}
       >
@@ -24,7 +23,7 @@ const Menu = ({ open, setOpen, ...props }) => {
         to="experience"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={0}
         duration= {500}
         onClick={() => setOpen(!open)}
       >
@@ -34,7 +33,7 @@ const Menu = ({ open, setOpen, ...props }) => {
         to="projects"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={0}
         duration= {500}
         onClick={() => setOpen(!open)}
       >
@@ -44,7 +43,7 @@ const Menu = ({ open, setOpen, ...props }) => {
         to="skills"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={0}
         duration= {500}
         onClick={() => setOpen(!open)}
       >
@@ -54,7 +53,7 @@ const Menu = ({ open, setOpen, ...props }) => {
         to="contact"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={0}
         duration= {500}
         onClick={() => setOpen(!open)}
       >

@@ -1,5 +1,43 @@
 import styled from 'styled-components';
 
 export const StyledExperience = styled.div`
-  height: 100vh;
+  position: relative;
+
+  h1 {
+
+  }
+  .container {
+    .organization {
+      
+      img {
+
+      }
+
+      .description {
+
+        .facts {
+
+          
+          .place {
+
+          }
+
+          .title {
+
+          }
+
+          .year {
+
+          }
+        }
+
+        .information {
+
+          p {
+
+          }
+        }
+      }
+    }
+  }
 `;

@@ -10,7 +10,7 @@ const Menu = ({ open, setOpen, ...props }) => {
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
       <Link activeClass="active"
-        to="me"
+        to="landing"
         spy={true}
         smooth={true}
         offset={0}
@@ -18,6 +18,16 @@ const Menu = ({ open, setOpen, ...props }) => {
         onClick={() => setOpen(!open)}
       >
         Me
+      </Link>
+      <Link activeClass="active"
+        to="education"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration= {500}
+        onClick={() => setOpen(!open)}
+      >
+        Education
       </Link>
       <Link activeClass="active"
         to="experience"

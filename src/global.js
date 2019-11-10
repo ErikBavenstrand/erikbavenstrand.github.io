@@ -15,11 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.primaryLight};
     color: ${({ theme }) => theme.primaryDark};
     text-rendering: optimizeLegibility;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-  h1 {
-    font-size: 2rem;
-    text-align: center;
+    font-family: Inter;
   }
   img {
     border-radius: 5px;
@@ -36,4 +32,4 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.primaryHover};
     text-decoration: none;
   }
-`
+`;

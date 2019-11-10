@@ -2,66 +2,38 @@ import styled from 'styled-components';
 
 export const StyledLanding = styled.div`
   position: relative;
-  height: 100vh;
-  width: 70vw;
-  display: flex;
+  height: 80vh;
+  margin-bottom: 20vh;
+  display:flex;
   align-items: center;
+  justify-content: center;
   .container {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    .text {
-      float: left;
-      width: 50%;
-      h1 {
-        text-align: left;
-        opacity: 0;
-        animation: fadeIn ease 3s; 
-        animation-iteration-count: 1; 
-        animation-fill-mode: forwards;
-        font-size: 9vw;
-        margin-bottom: 0;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; 
+      height: auto;
+      
+      .greeting {
+        font-size: 19vw;
+        font-weight: 700;
+        p {
+          text-align: left;
+          margin: 0;
+        }
       }
-      h2 {
-        text-align: left;
-        opacity: 0;
-        animation: fadeIn ease 3s; 
-        animation-iteration-count: 1; 
-        animation-fill-mode: forwards;
-        animation-delay: 1s;
-        font-size: 9vw;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      p {
-        text-align: left;
-        font-size: 2vw;
-        opacity: 0;
-        animation: fadeIn ease 3s; 
-        animation-iteration-count: 1; 
-        animation-fill-mode: forwards;
-        animation-delay: 3s;
-      }
-    }
-    .portrait {
-      width: 50%;
-      float: right;
+
       img {
         border-radius: 50%;
-        width: 80%;
-        height: auto;
-        border: 1px solid #ddd;
+        border: 1px solid ${({ theme }) => theme.lightBorder};
+        width: 100%;
       }
-    }
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
     }
   }
 `;

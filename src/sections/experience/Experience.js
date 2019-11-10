@@ -1,73 +1,47 @@
 import React from 'react';
 import { StyledExperience } from './Experience.styled';
-import { DownArrow } from '../../components'
 import KTH from '../../assets/KTH.png';
 import Nextline from '../../assets/Nextline.png';
 import Byggmax from '../../assets/Byggmax.jpg';
+import Fordonsbolaget from '../../assets/Fordonsbolaget.png';
+import { ExperienceCard } from '../../components';
 
 const Experience = () => {
   return (
     <StyledExperience id="experience">
-      <h1>Education</h1>
-      <div class="container">
-        <div class="organization">
-          <img src={KTH} alt="KTH" />
-          <div class="description">
-            <div class="facts">
-              <p class="place">Royal Institute of Technology</p>
-              <p class="title">M.Sc in Computer Science</p>
-              <p class="year">2016-2021</p>
-            </div>
-            <div class="information">
-              <p>During my studies at KTH I have focused on a mix of theoretical and practical knowledge within IT and computer science. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
       <h1>Experience</h1>
       <div class="container">
-        <div class="organization">
-          <img src={Nextline} alt="Nextline" />
-          <div class="description">
-            <div class="facts">
-              <p class="place">Nextline AB</p>
-              <p class="title">Founder & CEO</p>
-              <p class="year">2019-Present</p>
-            </div>
-            <div class="information">
-              <p>Lorem ipsum dium</p>
-            </div>
-          </div>
-        </div>
-        <div class="organization">
-          <img src={KTH} alt="KTH" />
-          <div class="description">
-            <div class="facts">
-              <p class="place">Royal Institute of Technology</p>
-              <p class="title">Lab assistant</p>
-              <p class="year">2018-2019</p>
-            </div>
-            <div class="information">
-              <p>Lorem ipsum dium</p>
-            </div>
-          </div>
-        </div>
-        <div class="organization">
-          <img src={Byggmax} alt="Byggmax" />
-          <div class="description">
-            <div class="facts">
-              <p class="place">Byggmax AB</p>
-              <p class="title">Employee</p>
-              <p class="year">2016-2019</p>
-            </div>
-            <div class="information">
-              <p>Lorem ipsum dium</p>
-            </div>
-          </div>
-        </div>
+        <ExperienceCard 
+          image={Nextline} 
+          location="Nextline AB"
+          titles={["Founder"]}
+          year="2019-Present"
+          description="Nextline is a software development firm founded by myself in 2019. Since its founding I have constantly been on contract. It is has been very valuable for me to learn about building a business from the ground up and i have come to appreciate my knowledge of Industrial Economics since I am handling the bookkeeping."
+        />
+        <ExperienceCard 
+          image={Fordonsbolaget} 
+          location="Fordonsbolaget AB"
+          titles={["Fullstack Developer"]}
+          year="2019-Present"
+          description="Fordonsbolaget is a premium car reseller and a Honda retailer striving to modernize the car purchasing experience. I am part of an international software development team building a customer facing web application and an in-house adminstrative tool used by all parts of the company. We work agile in the framework scrum and I work fullstack with MySQL, Angular JavaScript and Java."
+        />
+        <ExperienceCard 
+          image={KTH} 
+          color="#1954a6"
+          location="Royal Institute of Technology"
+          titles={["Lab assistant"]}
+          year="2018-2019"
+          description="I was a lab assistant for the course Computer Hardware Engineering (IS1200) where I examined the students on the laborations and helped them with the course during the lunch office hours. I assisted during two separate course offerings. "
+        />
+        <ExperienceCard 
+          image={Byggmax} 
+          color="#ffe616"
+          location="Byggmax AB"
+          titles={["Store employee"]}
+          year="2016-2019"
+          description="I worked at Byggmax part-time during my B.Sc studies and full-time during the summers. I quit in 2019 to found Nextline AB."
+        />
       </div>
-      <DownArrow toId="projects" toName="Projects"/>
     </StyledExperience>
   )
 }

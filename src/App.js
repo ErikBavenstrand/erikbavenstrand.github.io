@@ -2,9 +2,11 @@ import React, { useState, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { useOnClickOutside } from './hooks';
 import { GlobalStyles } from './global';
+import './assets/Fonts/Inter (Web)/inter.css';
 import { theme } from './theme';
 import { Burger, Menu } from './components';
-import { Landing, Experience, Projects, Skills, Contact } from './sections';
+import { Landing, Experience, Projects, Skills, Contact, Education } from './sections';
+import { StyledApp } from './App.styled';
 import FocusLock from 'react-focus-lock';
 
 function App() {
@@ -23,11 +25,14 @@ function App() {
           <Menu open={open} setOpen={setOpen} id={menuId} />
         </FocusLock>
       </div>
-      <Landing/>
-      <Experience/>
-      <Projects/>
-      <Skills/>
-      <Contact/>
+      <StyledApp>
+        <Landing/>
+        <Education/>
+        <Experience/>
+        <Projects/>
+        <Skills/>
+        <Contact/>
+      </StyledApp>
     </ThemeProvider>
   );
 }

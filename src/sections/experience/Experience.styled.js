@@ -2,42 +2,16 @@ import styled from 'styled-components';
 
 export const StyledExperience = styled.div`
   position: relative;
+  min-height: 100vh;
 
   h1 {
-
+    font-weight: 600;
+    margin-bottom: 30px;
   }
+
   .container {
-    .organization {
-      
-      img {
-
-      }
-
-      .description {
-
-        .facts {
-
-          
-          .place {
-
-          }
-
-          .title {
-
-          }
-
-          .year {
-
-          }
-        }
-
-        .information {
-
-          p {
-
-          }
-        }
-      }
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
   }
 `;

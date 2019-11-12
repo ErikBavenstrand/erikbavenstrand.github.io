@@ -2,18 +2,18 @@ import styled from 'styled-components';
 
 export const StyledSkills = styled.div`
   position: relative;
+  min-height: 100vh;
+
   h1 {
-    text-align: center;
+    font-weight: 600;
     margin-bottom: 0;
   }
-
-  hr {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.5px solid ${({ theme }) => theme.lightBorder};
-    width: 40%;
+  
+  h2 {
+    font-weight: 300;
+    font-size: 5.5vw;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   .container {
@@ -26,8 +26,10 @@ export const StyledSkills = styled.div`
     margin-bottom: 20px;
     
     h1 {
-     margin-top: 0;
-     margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 6vw;
+      margin-bottom: 30px;
+      width: 100%;
     }
     
     .section {
@@ -45,6 +47,8 @@ export const StyledSkills = styled.div`
       p {
         margin-top: 10px;
         margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 4vw;
       }  
     }
   }

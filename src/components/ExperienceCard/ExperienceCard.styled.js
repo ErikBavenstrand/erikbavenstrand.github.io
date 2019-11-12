@@ -5,7 +5,7 @@ export const StyledExperienceCard = styled.div`
     display: flex;
     flex-direction: column; 
     height: auto;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid ${({ theme }) => theme.lightBorder};
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
     margin-bottom: 20px;

@@ -29,11 +29,6 @@ const Projects = () => {
           fileName="report"
           fileURL={nbodyReport}
         />
-        <ProjectCard
-          image={Project}
-          title="Thesis project"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
       </div>
     </StyledProjects>
   )

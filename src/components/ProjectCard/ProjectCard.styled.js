@@ -59,13 +59,12 @@ export const StyledProjectCard = styled.div`
 
     .buttons {
       display: flex;
+      margin: 10px;
+      justify-content: space-between;
       a {
         display: flex;
         justify-content: center;
         padding: 2px;
-        margin-left: auto;
-        margin-right: 10px;
-        margin-bottom: 10px;
         border: 1px solid ${({ theme }) => theme.lightBorder};
         border-radius: 0.25em;
         cursor: pointer;

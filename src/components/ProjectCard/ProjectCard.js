@@ -10,10 +10,10 @@ const ProjectCard = ({image, title, description, toolLogos, gitHubLink, fileName
       return <img key={toolLogo} src={require(`../../assets/LanguageLogos/${toolLogo}.svg`)} alt={toolLogo} />
     });
   }
-  let file = []
+  let file = <div></div>;
   if (fileName && fileURL) {
     file = (
-      <a href={fileURL} download class="leftButton">
+      <a href={fileURL} download target="_blank" rel="noopener noreferrer">
         <img src={DownloadIcon} alt="Download"/>
         <div class="vertical"></div>
         <p>Download {fileName}</p>
@@ -28,7 +28,7 @@ const ProjectCard = ({image, title, description, toolLogos, gitHubLink, fileName
           <p>{title}</p>
         </div>
         <div class="image">
-          <div class="img" style={{"background-image" : `url(${image})`}}></div>
+          <div class="img" style={{"backgroundImage" : `url(${image})`}}></div>
         </div>
         <div class="tools">
           {tools}

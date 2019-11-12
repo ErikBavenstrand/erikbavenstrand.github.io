@@ -14,6 +14,7 @@ const Skills = () => {
   return (
     <StyledSkills id="skills">
       <h1>Skills</h1>
+      <h2>Languages & Technologies</h2>
       <div class="container">
         <h1>Languages</h1>
         <div class="section">
@@ -54,13 +55,6 @@ const Skills = () => {
         <div class="section">
           <img src={Reactlogo} alt="Reactlogo" />
           <p>React</p>
-        </div>
-      </div>
-      <div class="container">
-        <h1>Soft Skills</h1>
-        <div class="section">
-          <img src={Cpp} alt="C++" />
-          <p>C/C++</p>
         </div>
       </div>
     </StyledSkills>

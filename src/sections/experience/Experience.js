@@ -3,6 +3,7 @@ import { StyledExperience } from './Experience.styled';
 import KTH from '../../assets/KTH.png';
 import Byggmax from '../../assets/Byggmax.jpg';
 import Fordonsbolaget from '../../assets/Fordonsbolaget.png';
+import Nextline from '../../assets/Nextline.svg';
 import { ExperienceCard } from '../../components';
 
 const Experience = () => {
@@ -11,6 +12,7 @@ const Experience = () => {
       <h1>Experience</h1>
       <div class="container">
         <ExperienceCard 
+          image={Nextline}
           location="Founder & Software Developer"
           titles={["Nextline AB"]}
           year="2019-Present"

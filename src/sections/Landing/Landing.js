@@ -18,7 +18,7 @@ const Landing = () => {
             <p>I'm a creative and driven individual that always strives to improve myself. </p>
           </div>
           <div class="resume">
-            <a href={Resume} download='Resume_Erik_Bavenstrand.pdf' target="_blank" rel="noopener noreferrer" className="download">
+            <a href={Resume} download target="_blank" rel="noopener noreferrer" class="download">
               <p>Download my resumé</p>
             </a>
             <div class="social">

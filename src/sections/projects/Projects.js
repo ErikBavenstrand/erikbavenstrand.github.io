@@ -3,6 +3,7 @@ import { StyledProjects } from './Projects.styled';
 import NBody from '../../assets/Projects/NBody.jpg';
 import Torcs from '../../assets/Projects/Torcs.jpeg';
 import Thesis from '../../assets/Papers/Performance_Evaluation_of_Imitation_Learning_Algorithms_with_Human_Experts.pdf';
+import Resume from '../../assets/Papers/Resume_Erik_Bavenstrand.pdf';
 import nbodyReport from '../../assets/Papers/id1217_project_report.pdf';
 import { ProjectCard } from '../../components';
 
@@ -28,6 +29,15 @@ const Projects = () => {
           gitHubLink="https://github.com/ErikBavenstrand/Performance-Evaluation-of-Imitation-Learning-Algorithms-with-Human-Experts"
           fileName="report"
           fileURL={nbodyReport}
+        />
+        <ProjectCard
+          image={NBody}
+          title="Concurrent N-Body Simulation"
+          description="N-Body simulation is a simulation of a dynamical system of particles under the forces of gravity. This project contains two different methods of approximating such a system both with sequential and parallel implementations and was made for a course in concurrent programming. I also patched a visualization tool made in OpenGL."
+          toolLogos={["C++", "Git", "Bash"]}
+          gitHubLink="https://github.com/ErikBavenstrand/Performance-Evaluation-of-Imitation-Learning-Algorithms-with-Human-Experts"
+          fileName="resume"
+          fileURL={Resume}
         />
       </div>
     </StyledProjects>

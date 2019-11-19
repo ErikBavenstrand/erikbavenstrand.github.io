@@ -1,6 +1,6 @@
 export const theme = {
     lightBorder: '#ebebeb',
-    primaryDark: '#333333',
+    primaryDark: '#0D0C1D',
     primaryLight: '#FFFFFFFF',
     primaryGrey: '#EEEEEE',
     primaryHover: '#343078',

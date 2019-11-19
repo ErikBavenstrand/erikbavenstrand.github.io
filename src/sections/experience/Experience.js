@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyledExperience } from './Experience.styled';
 import KTH from '../../assets/KTH.png';
-import Nextline from '../../assets/Nextline.png';
 import Byggmax from '../../assets/Byggmax.jpg';
 import Fordonsbolaget from '../../assets/Fordonsbolaget.png';
 import { ExperienceCard } from '../../components';
@@ -12,34 +11,34 @@ const Experience = () => {
       <h1>Experience</h1>
       <div class="container">
         <ExperienceCard 
-          image={Nextline} 
-          location="Nextline AB"
-          titles={["Founder"]}
+          location="Founder & Software Developer"
+          titles={["Nextline AB"]}
           year="2019-Present"
-          description="Nextline is a software development firm founded by myself in 2019. Since its founding I have constantly been on contract. It is has been very valuable for me to learn about building a business from the ground up and i have come to appreciate my knowledge of Industrial Economics since I am handling the bookkeeping."
+          description="I founded Nextline AB to be able to work as a software development consulting while attending university. The experience of establishing and operating a company has been a great learning opportunity for me. 
+It's been valuable to learn about building a business from the ground up and I have come to appreciate my knowledge of Industrial Economics since I'm in charge of the bookkeeping. Ever since it's establishing, Nextline has continually been on contract with Fordonsbolaget AB."
         />
         <ExperienceCard 
           image={Fordonsbolaget} 
-          location="Fordonsbolaget AB"
-          titles={["Fullstack Developer"]}
+          location="Fullstack Developer"
+          titles={["Fordonsbolaget AB"]}
           year="2019-Present"
-          description="Fordonsbolaget is a premium car reseller and a Honda retailer striving to modernize the car purchasing experience. I am part of an international software development team building a customer facing web application and an in-house adminstrative tool used by all parts of the company. We work agile in the framework scrum and I work fullstack with MySQL, Angular JavaScript and Java."
+          description="Fordonsbolaget is a premium car reseller and a Honda retailer striving to modernize the car purchasing experience. I am part of an international development team working in scrum to build a customer-facing web application and an internal tool used by purchasing and the workshop.  The frontend of both applications is developed in Angular JavaScript, and the backend is implemented in Java with Spring Boot. SQL is used to query the databases, and the APIs are built according to the RESTful specification."
         />
         <ExperienceCard 
           image={KTH} 
           color="#1954a6"
-          location="Royal Institute of Technology"
-          titles={["Lab assistant"]}
+          location="Lab assistant"
+          titles={["Royal Institute of Technology"]}
           year="2018-2019"
-          description="I was a lab assistant for the course Computer Hardware Engineering (IS1200) where I examined the students on the laborations and helped them with the course during the lunch office hours. I assisted during two separate course offerings. "
+          description="I was a lab assistant for the course Computer Hardware Engineering (IS1200). During lab sessions of the course, I examined students on their solutions to the labs. The subject of the labs ranged from assembler and C to programming microprocessors. Lunch office hours were held during lunch to give the students the option to ask for help with the subject. The ability to break down complex concepts and explaining them in a simple but accurate manner certainly improved my communication skills."
         />
         <ExperienceCard 
           image={Byggmax} 
           color="#ffe616"
-          location="Byggmax AB"
-          titles={["Store employee"]}
+          location="Store employee"
+          titles={["Byggmax AB"]}
           year="2016-2019"
-          description="I worked at Byggmax part-time during my B.Sc studies and full-time during the summers. I quit in 2019 to found Nextline AB."
+          description="I worked part-time at Byggmax during my B.Sc education on weekends and in the summers. The tasks ranged from attending the cash register to receiving and shipping deliveries with a forklift. I left in 2019 to found Nextline AB."
         />
       </div>
     </StyledExperience>

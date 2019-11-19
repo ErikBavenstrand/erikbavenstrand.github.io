@@ -24,14 +24,15 @@ const ProjectCard = ({image, title, description, toolLogos, gitHubLink, fileName
   return (
     <StyledProjectCard>
       <div class="section">
+        <div class="image">
+          <div class="img" style={{"backgroundImage" : `url(${image})`}}>
+            <div class="tools">
+              {tools}
+            </div>
+          </div>
+        </div>
         <div class="title">
           <p>{title}</p>
-        </div>
-        <div class="image">
-          <div class="img" style={{"backgroundImage" : `url(${image})`}}></div>
-        </div>
-        <div class="tools">
-          {tools}
         </div>
         <div class="description">
           <p>{description}</p>

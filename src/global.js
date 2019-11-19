@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.primaryLight};
     color: ${({ theme }) => theme.primaryDark};
     text-rendering: optimizeLegibility;
-    font-family: Inter;
+    font-family: Arial, sans-serif;
   }
   img {
     border-radius: 5px;

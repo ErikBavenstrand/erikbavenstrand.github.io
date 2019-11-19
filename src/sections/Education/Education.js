@@ -14,7 +14,7 @@ const Education = () => {
           location="Royal Institute of Technology"
           titles={["B.Sc in Information Technology", "M.Sc in Computer Science"]}
           year="2016-2021"
-          description="At KTH I am majoring in Computer Science with a specialization in Data Science. It includes courses in Algorithms and Data Structures, Machine Learning and Data Mining. I have also focused on deepeing my knowledge in additional fields such as, Concurrent Programming and Data Visualization."
+          description="At KTH, I'm majoring in Computer Science with a Data Science specialization. In my B.Sc education, I focused on the foundations that make up the computer science field. Courses in mathematics, programming, algorithms and data structures let me develop a broad knowledge of the area.  In my master's, I have chosen to deepen my understanding in the domain of data science, machine learning, and data mining."
         />
       </div>
     </StyledEducation>

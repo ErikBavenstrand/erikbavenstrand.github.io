@@ -7349,7 +7349,7 @@ hr {
 .wrapper.style2 {
   padding: 7rem;
   background-color: #eeeeee;
-  background: linear-gradient(45deg, #ec2f4b 0%, #009fff 100%);
+  background: linear-gradient(45deg, #ec2f4b 0%, #1565c0 100%);
 }
 
 .wrapper.style2 > .inner {

@@ -2209,7 +2209,6 @@ button,
   white-space: nowrap;
   font-size: 0.75rem;
   max-width: 20rem;
-  height: 3.75em;
   line-height: 3.75em;
   border-radius: 3.75em;
   padding: 0 2.5em;
@@ -2685,7 +2684,6 @@ input[type="radio"]:focus + label:before {
 .icon.style2:before {
   border-radius: 2.75em;
   display: inline-block;
-  height: 2.75em;
   line-height: 2.75em;
   width: 2.75em;
 }

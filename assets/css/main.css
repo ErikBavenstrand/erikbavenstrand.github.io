@@ -2643,8 +2643,20 @@ input[type="radio"]:focus + label:before {
   color: rgba(0, 0, 0, 0.75) !important;
 }
 
-/* Icon */
+.square {
+  padding: 0 !important;
+}
 
+.square .content h3 {
+  margin-bottom: 1rem;
+}
+
+.square .image img {
+  border-radius: 4px !important;
+  border: solid rgba(0, 0, 0, 0.2) 1px;
+}
+
+/* Icon */
 .icon {
   text-decoration: none;
   border-bottom: none;
@@ -4483,7 +4495,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
 }
 
 .banner .image {
-  background-color: rgba(0, 0, 0, 0.125);
+  border: solid rgba(0, 0, 0, 0.2) 1px;
 }
 
 .banner.invert .image {
@@ -7337,7 +7349,7 @@ hr {
 .wrapper.style2 {
   padding: 7rem;
   background-color: #eeeeee;
-  background: linear-gradient(45deg, #b92b27 0%, #1565c0 100%);
+  background: linear-gradient(45deg, #ec2f4b 0%, #009fff 100%);
 }
 
 .wrapper.style2 > .inner {

@@ -1,31 +1,547 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tag above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Erik Båvenstrand</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
   </head>
-  <body>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+      <!-- One -->
+      <section
+        class="banner style3 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+      >
+        <div class="content">
+          <h1>Erik Båvenstrand</h1>
+          <p class="major">
+            I'm a creative and enthusiastic individual that always strives to
+            improve myself.
+          </p>
+          <br />
+          <br />
+          <ul class="actions">
+            <li class="full-width">
+              <a
+                href="/files/Resume_Erik_Bavenstrand.pdf"
+                download=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+                >Download my resume</a
+              >
+            </li>
+            <li class="flex-right icon-grouped">
+              <a
+                href="https://github.com/ErikBavenstrand"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon brands style2 fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li class="icon-grouped">
+              <a
+                href="https://www.linkedin.com/in/erikbavenstrand/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon brands style2 fa-linkedin-in"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li class="icon-grouped">
+              <a href="#contact-form" class="icon style2 fa-envelope"
+                ><span class="label">Email</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/portrait.png" alt="" />
+        </div>
+      </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <section class="wrapper style2 align-center">
+        <div class="inner">
+          <h2>Education</h2>
+          <div class="index align-left">
+            <section>
+              <div class="content">
+                <span class="image left square">
+                  <img class="" src="images/KTH.png" alt="" />
+                </span>
+                <div class="description">
+                  <h3>KTH Royal Institute of Technology</h3>
+                  <h4>B.Sc in Information Technology</h4>
+                  <h4>M.Sc in Computer Science</h4>
+                  <h4>2016-2021</h4>
+                </div>
+                At KTH, I'm majoring in Computer Science with a specialization
+                in Data Science. During my B.Sc education, I studied the
+                foundations that make up the computer science field. Courses in
+                <strong>mathematics</strong>, <strong>programming</strong>,
+                <strong>algorithms and data structures</strong> led me to
+                develop a broad knowledge of the area of computer science.
+                During my master's I've chosen to deepen my understanding in the
+                domain of <strong>data science</strong>,
+                <strong>deep learning</strong>, and
+                <strong>data mining</strong>.
+              </div>
+            </section>
+          </div>
+          <hr />
+          <br />
+          <h2>Experience</h2>
+          <div class="index align-left">
+            <section>
+              <div class="content">
+                <span class="image left square">
+                  <img class="" src="images/Nasdaq.png" alt="" />
+                </span>
+                <div class="description">
+                  <h3>Software Development Intern</h3>
+                  <h4>Nasdaq</h4>
+                  <h4>Summer 2020</h4>
+                </div>
+                TBD
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <span class="image left square use-padding">
+                  <img class="" src="images/Nextline.svg" alt="" />
+                </span>
+                <div class="description">
+                  <h3>Founder & Software Developer</h3>
+                  <h4>Nextline AB</h4>
+                  <h4>2019-Present</h4>
+                </div>
+                I founded Nextline AB to work as a software development consult
+                while attending KTH. The experience of establishing and running
+                a company has been a great learning opportunity for me. It's
+                been valuable to learn about building a business from the ground
+                up and I've come to appreciate my knowledge of Industrial
+                Economics since I'm in charge of the bookkeeping. Since it's
+                establishing, Nextline has been on contract with Fordonsbolaget
+                AB.
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <span class="image left square">
+                  <img src="images/Fordonsbolaget.png" alt="" />
+                </span>
+                <div class="description">
+                  <h3>Software Developer</h3>
+                  <h4>Fordonsbolaget AB</h4>
+                  <h4>2019-2020</h4>
+                </div>
+                Fordonsbolaget is a premium car reseller and a Honda retailer
+                striving to modernize the car purchasing experience. I was part
+                of an international development team working in scrum to build a
+                customer-facing web application and an internal tool used by
+                purchasing and the workshop. The frontend of both applications
+                is developed in <strong>Angular JavaScript</strong>, and the
+                backend is implemented in <strong>Java</strong> with
+                <strong>Spring Boot</strong>. <strong>SQL</strong> is used to
+                query the databases, and the APIs are built according to the
+                <strong>RESTful</strong>
+                specification.
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <span class="image left square">
+                  <img src="images/KTH.png" alt="" />
+                </span>
+                <div class="description">
+                  <h3>Lab Assistant</h3>
+                  <h4>Royal Institute of Technology</h4>
+                  <h4>2018-2019</h4>
+                </div>
+                I was a lab assistant for the course Computer Hardware
+                Engineering (IS1200). During lab sessions of the course, I
+                examined students on their solutions to the labs. The subject of
+                the labs ranged from <strong>assembler</strong> and
+                <strong>C</strong> to programming microprocessors. Lunch office
+                hours were held during lunch to give the students the option to
+                ask for help with the subject. The ability to break down complex
+                concepts and explaining them in a simple but accurate manner
+                certainly improved my communication skills.
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <span class="image left square">
+                  <img src="images/Byggmax.jpg" alt="" />
+                </span>
+                <div class="description">
+                  <h3>Store Employee</h3>
+                  <h4>Byggmax AB</h4>
+                  <h4>2016-2019</h4>
+                </div>
+                I worked part-time at Byggmax during my B.Sc education on
+                weekends and in the summers. The tasks ranged from attending the
+                cash register to receiving and shipping deliveries with a
+                forklift. I left in 2019 to found Nextline AB.
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
 
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
-    -->
+      <!-- Two -->
+      <section
+        class="spotlight style1 orient-right content-align-left image-position-left onscroll-image-fade-in"
+        id="first"
+      >
+        <div class="content">
+          <h2>
+            Performance Evaluation of Imitation Learning Algorithms with Human
+            Experts
+          </h2>
+          <p>
+            I, together with a coursemate did this project as our B.Sc thesis
+            and was built with Python and the artificial neural networks used
+            Tensorflow. The project aimed to evaluate three different imitation
+            learning algorithms that used human experts. The learning
+            environment was TORCS, a car racing simulator. We found that for
+            human experts, one of the algorithms outperformed the others by a
+            large margin. More information about the project can be found on
+            GitHub.
+          </p>
+          <br />
+          <ul class="actions">
+            <li>
+              <a
+                href="https://github.com/ErikBavenstrand/Performance-Evaluation-of-Imitation-Learning-Algorithms-with-Human-Experts"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon brands style2 fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li class="no-padding">
+              <a
+                href="/files/Performance_Evaluation_of_Imitation_Learning_Algorithms_with_Human_Experts.pdf"
+                download=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+                >Download Thesis</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/projects/Torcs.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Three -->
+      <section
+        class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+      >
+        <div class="content">
+          <h2>Concurrent N-Body Simulation</h2>
+          <p>
+            N-Body simulation is a simulation of a dynamical system of particles
+            under the forces of gravity. This project contains two different
+            methods of approximating such a system both with sequential and
+            parallel implementations and was made for a course in concurrent
+            programming. I also patched a visualization tool made in OpenGL.
+          </p>
+          <br />
+          <ul class="actions">
+            <li>
+              <a
+                href="https://github.com/ErikBavenstrand/N-Body-Simulation"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon brands style2 fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li class="no-padding">
+              <a
+                href="/files/N-Body_Report.pdf"
+                download=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+                >Download Report</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/projects/NBody.gif" alt="" />
+        </div>
+      </section>
+
+      <!-- Four -->
+      <section
+        class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
+      >
+        <div class="content">
+          <h2>Mandelbrot Visualization</h2>
+          <p>
+            The Mandelbrot set is a set of complex numbers received from
+            iterating a function until convergence. It is often visualized with
+            hypnotic zooming that dives infinitely deep into the set. The
+            project is entirely written in Elixir, a functional programming
+            language based on Erlang.
+          </p>
+          <br />
+          <ul class="actions">
+            <li>
+              <a
+                href="https://github.com/ErikBavenstrand/Mandelbrot-Visualization"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon brands style2 fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/projects/Mandelbrot.png" alt="" />
+        </div>
+      </section>
+
+      <section
+        class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in"
+      >
+        <div class="content">
+          <h2>Neural Network Implementation in Numpy</h2>
+          <p>
+            I implemented an artificial neural network in Python with just Numpy
+            for a project to an introductory course in artificial intelligence.
+            Since digit recognition is one of the most simple test cases for
+            machine learning, the network implementation was evaluated with the
+            MNIST dataset that contains a large number of written digits. An
+            accuracy of 96% was achieved with some parameter tweaking.
+          </p>
+          <br />
+          <ul class="actions">
+            <li>
+              <a
+                href="https://github.com/ErikBavenstrand/Neural-Network-Implementation"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon brands style2 fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li class="no-padding">
+              <a
+                href="/files/Neural-Network_Report.pdf"
+                download=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+                >Download Report</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/projects/MNIST.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Six -->
+      <section class="wrapper style1 align-center">
+        <div class="inner">
+          <h2>Languages</h2>
+          <div class="items style3 medium onscroll-fade-in">
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/C++.svg"
+              /></span>
+              <h3>C/C++</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Python.svg"
+              /></span>
+              <h3>Python</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Java.svg"
+              /></span>
+              <h3>Java</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/JavaScript.svg"
+              /></span>
+              <h3>JavaScript</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/MySQL.svg"
+              /></span>
+              <h3>SQL</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Elixir.png"
+              /></span>
+              <h3>Elixir</h3>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper style1 align-center">
+        <div class="inner">
+          <h2>Technologies</h2>
+          <div class="items style3 medium onscroll-fade-in">
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Tensorflow.svg"
+              /></span>
+              <h3>Tensorflow</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Git.svg"
+              /></span>
+              <h3>Git</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Angular.svg"
+              /></span>
+              <h3>AngularJS</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/React.svg"
+              /></span>
+              <h3>ReactJS</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Jupyter.svg"
+              /></span>
+              <h3>Jupyter Notebook</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Scikit.svg"
+              /></span>
+              <h3>Scikit-Learn</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Numpy.svg"
+              /></span>
+              <h3>NumPy</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Bash.svg"
+              /></span>
+              <h3>Bash</h3>
+            </section>
+            <section>
+              <span class="icon style1 skill-logos"
+                ><img src="images/logos/Docker.svg"
+              /></span>
+              <h3>Docker</h3>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seven -->
+      <section class="wrapper style1 align-center" id="contact-form">
+        <div class="inner medium">
+          <h2>Get in touch</h2>
+          <form method="POST" action="https://formspree.io/xgenloqp">
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" value="" />
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6"></textarea>
+              </div>
+            </div>
+            <ul class="actions special">
+              <li>
+                <input
+                  type="submit"
+                  name="submit"
+                  id="submit"
+                  value="Send Message"
+                />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="wrapper style1 align-center">
+        <div class="inner">
+          <ul class="icons">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/erikbavenstrand/"
+                class="icon brands style2 fa-linkedin-in"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/ErikBavenstrand"
+                class="icon brands style2 fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+          </ul>
+          <p>
+            &copy; Erik Båvenstrand. Design:
+            <a
+              href="https://html5up.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              >HTML5 UP</a
+            >, Erik Båvenstrand.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

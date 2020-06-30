@@ -3400,6 +3400,18 @@ body.is-preload .banner.onload-image-fade-in .image img {
   opacity: 0;
 }
 
+.banner.onload-image-fade-in .image {
+  border: solid rgba(0, 0, 0, 0.2) 1px;
+  -moz-transition: border 0.75s ease-in-out;
+  -webkit-transition: border 0.75s ease-in-out;
+  -ms-transition: border 0.75s ease-in-out;
+  transition: border 0.75s ease-in-out;
+}
+
+body.is-preload .banner.onload-image-fade-in .image {
+  border: solid rgba(0, 0, 0, 0) 1px;
+}
+
 .banner.onscroll-content-fade-up .content {
   -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
   -webkit-transition: opacity 0.75s ease-in-out,
@@ -4495,7 +4507,6 @@ body.is-preload .banner.onload-image-fade-in .image img {
 }
 
 .banner .image {
-  border: solid rgba(0, 0, 0, 0.2) 1px;
 }
 
 .banner.invert .image {

@@ -5174,6 +5174,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
   position: relative;
   overflow-x: hidden;
   text-align: left;
+  margin-bottom: 2rem;
 }
 
 .spotlight.style2 .content {
